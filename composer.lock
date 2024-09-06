@@ -381,22 +381,22 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Inductor\\Inductor\\InductorServiceProvider"
+                        "ChrisReedIO\\Inductor\\InductorServiceProvider"
                     ],
                     "aliases": {
-                        "Inductor": "Inductor\\Inductor\\Facades\\Inductor"
+                        "Inductor": "ChrisReedIO\\Inductor\\Facades\\Inductor"
                     }
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Inductor\\Inductor\\": "src/",
-                    "Inductor\\Inductor\\Database\\Factories\\": "database/factories/"
+                    "ChrisReedIO\\Inductor\\": "src/",
+                    "ChrisReedIO\\Inductor\\Database\\Factories\\": "database/factories/"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "Inductor\\Inductor\\Tests\\": "tests/"
+                    "ChrisReedIO\\Inductor\\Tests\\": "tests/"
                 }
             },
             "scripts": {
