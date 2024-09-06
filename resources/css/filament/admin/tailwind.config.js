@@ -7,6 +7,8 @@ export default {
         './resources/views/filament/**/*.blade.php',
         './resources/js/Components/**/*.vue',
         './vendor/filament/**/*.blade.php',
+
+        // Inductor
         './vendor/chrisreedio/inductor/resources/views/**/*.blade.php',
         './vendor/chrisreedio/inductor/resources/js/**/*.vue',
     ],

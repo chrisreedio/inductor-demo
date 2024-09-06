@@ -9,25 +9,7 @@ export default defineConfig({
             input: [
                 ...globSync('resources/{css,js,Components,views}/**/*.{css,js,vue}'),
                 ...globSync('vendor/chrisreedio/inductor/resources/js/**/*.{js,vue,ts}'),
-                // 'vendor/chrisreedio/inductor/resources/js/**/*.js',
             ],
-            // input: [
-            //     'resources/css/app.css',
-            //     'resources/js/app.js',
-
-            // Filament Theme
-            // 'resources/css/filament/admin/theme.css',
-
-            // Inductor
-            // 'resources/views/**/*.blade.php',
-            // 'resources/js/Components/**/*.js',
-            // 'resources/js/Components/**/*.vue',
-            // 'resources/js/Components/Counter.vue',
-
-            // ...globSync("resources/{css,js,Components}/**/*.{css,js,vue}")
-
-            // 'vendor/chrisreedio/inductor/resources/js/**/*.js',
-            // ],
             refresh: true,
         }),
         vue({
