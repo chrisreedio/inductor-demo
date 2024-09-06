@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "chrisreedio/inductor": "dev-main",
         "filament/filament": "^3.0-stable",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9"
@@ -62,6 +63,12 @@
             "php-http/discovery": true
         }
     },
-    "minimum-stability": "stable",
-    "prefer-stable": true
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../inductor"
+        }
+    ]
 }

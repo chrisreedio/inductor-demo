@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "31678720e4a87620241ddf9d20240e55",
+    "content-hash": "575eb6fcf172eaaab2686c8868babae3",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -350,6 +350,96 @@
                 }
             ],
             "time": "2024-02-09T16:56:22+00:00"
+        },
+        {
+            "name": "chrisreedio/inductor",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../inductor",
+                "reference": "c7351f74c71a7c2f18309ae3064aa8ba3d2e0dfc"
+            },
+            "require": {
+                "filament/filament": "^3.0",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.15.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.9",
+                "nunomaduro/larastan": "^2.0.1",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.1",
+                "pestphp/pest-plugin-arch": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "spatie/laravel-ray": "^1.26"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Inductor\\Inductor\\InductorServiceProvider"
+                    ],
+                    "aliases": {
+                        "Inductor": "Inductor\\Inductor\\Facades\\Inductor"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Inductor\\Inductor\\": "src/",
+                    "Inductor\\Inductor\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Inductor\\Inductor\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php ./vendor/bin/testbench package:discover --ansi"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Reed",
+                    "email": "chris@reedtech.us",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Integrates Vue into FilamentPHP",
+            "homepage": "https://github.com/chrisreedio/inductor",
+            "keywords": [
+                "chrisreedio",
+                "inductor",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/chrisreedio/inductor/issues",
+                "source": "https://github.com/chrisreedio/inductor"
+            },
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "danharrin/date-format-converter",
@@ -9663,7 +9753,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
