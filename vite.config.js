@@ -6,7 +6,11 @@ import { globSync } from 'glob'
 export default defineConfig({
     plugins: [
         laravel({
-            input: globSync('resources/{css,js,Components,views}/**/*.{css,js,vue}'),
+            input: [
+                ...globSync('resources/{css,js,Components,views}/**/*.{css,js,vue}'),
+                ...globSync('vendor/chrisreedio/inductor/resources/js/**/*.{js,vue,ts}'),
+                // 'vendor/chrisreedio/inductor/resources/js/**/*.js',
+            ],
             // input: [
             //     'resources/css/app.css',
             //     'resources/js/app.js',

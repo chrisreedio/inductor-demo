@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "575eb6fcf172eaaab2686c8868babae3",
+    "content-hash": "c3aa84d4b308affe359963f6a9428ec9",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -353,11 +353,11 @@
         },
         {
             "name": "chrisreedio/inductor",
-            "version": "dev-main",
+            "version": "dev-dev",
             "dist": {
                 "type": "path",
                 "url": "../inductor",
-                "reference": "c7351f74c71a7c2f18309ae3064aa8ba3d2e0dfc"
+                "reference": "fb000e161c84c90ab0d6cad80e559043930d22e2"
             },
             "require": {
                 "filament/filament": "^3.0",

@@ -42,7 +42,7 @@ class AdminPanelProvider extends PanelProvider
                 Widgets\FilamentInfoWidget::class,
             ])
             ->plugins([
-                // \ChrisReedIO\Inductor\InductorPlugin::make(),
+                \ChrisReedIO\Inductor\InductorPlugin::make(),
             ])
             ->middleware([
                 EncryptCookies::class,
